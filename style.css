@@ -1,9 +1,13 @@
-div{
+body {
+    padding: 0;
+    margin: 0;
+    transition: background 0.9s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 270px;
+    height: 100vh;
 }
+
 button {
     padding: 15px 50px;
     border: none;
@@ -13,12 +17,9 @@ button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.9s ease-in-out;
 }
 
-button:hover {
-
-    transform: scale(1.2, 1.2); 
-    box-shadow: 0 3px 45px rgba(133, 81, 136, 0.838);
+img{
+    width: 25px;
 }
 

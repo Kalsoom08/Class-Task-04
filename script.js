@@ -1,19 +1,22 @@
 var button = document.getElementById('btn');
-button.innerHTML='Night';
-var colorChanger = document.getElementById('btn').addEventListener('click', function() {
+var img = document.getElementById('btn-img');
+
+var colorChanger = button.addEventListener('click', function() {
   if (document.body.style.backgroundColor === 'black') {
     document.body.style.backgroundColor = 'white';
-    button.style.backgroundColor= 'black';
-    button.style.color= 'white';
-    button.innerHTML='Night';
+    
+    button.style.backgroundColor = 'black';
+    button.style.color = 'white';
+    img.src = './Images/moon (1).png';
+  
   } else {
     document.body.style.backgroundColor = 'black';
-    button.style.backgroundColor= 'white';
-    button.style.color= 'black';
-    button.innerHTML='Day';
-}
+    button.style.backgroundColor = 'white';
+    button.style.color = 'black';
+    img.src = './Images/sun.png';
+   
+  }
 });
-
 
 
  
